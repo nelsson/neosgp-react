@@ -1,0 +1,6 @@
+export const REQUEST_USER = "REQUEST_USER";
+export const RECEIVE_USER = "RECEIVE_USER";
+
+export const REQUEST_DELETE = "REQUEST_DELETE";
+export const RECEIVE_DELETE = "RECEIVE_DELETE";
+export const ALERT_DELETE = "ALERT_DELETE";
