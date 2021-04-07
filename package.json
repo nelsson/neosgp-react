@@ -4,6 +4,8 @@
   "homepage": "https://bootstrapdash.com/demo/star-admin-free/react/template/demo_1/preview",
   "private": true,
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^27.0.0",
+    "@ckeditor/ckeditor5-react": "^3.0.2",
     "@emotion/core": "^10.0.28",
     "@material-ui/core": "^4.10.0",
     "@mdi/font": "^4.5.95",
