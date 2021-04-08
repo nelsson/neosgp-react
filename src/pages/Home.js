@@ -1,12 +1,12 @@
 import React from "react";
 import TemplateBanner from '../components/Template-banners'
-import Editor from '../components/Editor'
+import EditorTemplate from '../components/Editor'
 function Home() {
 
 	return (
 		<div>
 			<TemplateBanner/>
-			<Editor/>
+			<EditorTemplate/>
 		</div>
 	);
 }
