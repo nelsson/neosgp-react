@@ -131,6 +131,20 @@ class Sidebar extends Component {
             </Collapse>
           </li>
 
+          <li className={ this.isPathActive('/proyectos') ? 'nav-item active' : 'nav-item' }>
+            <div className={ this.state.ViewProyectos ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('ViewProyectos') } data-toggle="collapse">
+              <i className="fa fa-folder-open menu-icon"></i>
+              <span className="menu-title">Proyectos</span>
+              <i className="menu-arrow"></i>
+            </div>
+            <Collapse in={ this.state.ViewProyectos }>
+              <ul className="nav flex-column sub-menu">
+                <li className="nav-item"> <Link className={ this.isPathActive('/basic-ui/buttons') ? 'nav-link active' : 'nav-link' } to="/proyectos">Listado de Proyectos</Link></li>
+                <li className="nav-item"> <Link className={ this.isPathActive('/basic-ui/dropdowns') ? 'nav-link active' : 'nav-link' } to="/crear-proyecto">Crear Proyecto</Link></li>
+              </ul>
+            </Collapse>
+          </li>
+
           <li className={ this.isPathActive('/users') ? 'nav-item active' : 'nav-item' }>
             <div className={ this.state.ViewUsers ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('ViewUsers') } data-toggle="collapse">
               <i className="fa fa-user-circle-o menu-icon"></i>
