@@ -6,6 +6,8 @@ import Users from "./pages/Users";
 import Recetas from "./pages/Recetas";
 import Categories from './pages/Categories';
 import Tiny from './pages/Tiny';
+import Proyectos from "./pages/Proyectos";
+import CrearProyecto from "./pages/CrearProyecto";
 
 const publicRoutes = [
   {
@@ -87,6 +89,26 @@ const publicRoutes = [
     navbar: true,
     sidebar: true,
     footer:true
+  },
+  {
+    name: "Proyectos",
+    component: Proyectos,
+    path: "/proyectos",
+    exact: true,
+    bodyClass: "proyectos-page",
+    navbar: true,
+    sidebar: true,
+    footer: true,
+  },
+  {
+    name: "CrearProyecto",
+    component: CrearProyecto,
+    path: "/crear-proyecto",
+    exact: true,
+    bodyClass: "crear-proyecto-page",
+    navbar: true,
+    sidebar: true,
+    footer: true,
   },
 
 ];
