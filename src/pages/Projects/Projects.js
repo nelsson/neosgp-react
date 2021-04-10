@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-const Proyectos = () => {
+const Projects = ({ listProjects, getReceiveProjects, getTest }) => {
+    useEffect(() => {
+        if (!listProjects) {
+          getTest();
+          getReceiveProjects();
+          return;
+        }
+    }, [getReceiveProjects, listProjects, getTest]);
+    
+    console.log('en proyectos', listProjects);
+
 	return (
 		<>
 			<h2>Página de Proyectos</h2>
@@ -65,4 +75,4 @@ const Proyectos = () => {
 	);
 }
  
-export default Proyectos;
+export default Projects;
