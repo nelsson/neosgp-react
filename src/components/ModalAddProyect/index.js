@@ -30,6 +30,22 @@ const useStyles = makeStyles((theme) => ({
   wrapButons:{
     textAlign: 'center',
     width: '100%'
+  },
+  boxResult:{
+    textAlign: 'center',
+    '& h2': {
+      fontSize: '20px',
+      fontWeight: 'bold',
+      color: 'black'
+    },
+    '& .card_btn_created': {
+      display: 'flex',
+      justifyContent: 'center',
+      flexDirection: 'column',
+      '& button': {
+        marginBottom: '10px'
+      }
+    }
   }
 }));
 
@@ -65,6 +81,14 @@ const ModalAddProyect = ({ open, handClose, active }) => {
                     <button type="button" onClick={handClose} className="btn btn-sm btn-light">Cancel</button>
                   </div>
                 </form>
+                <div className={classes.boxResult}>
+                  <p>Proyecto</p>
+                  <h2>Los Portales</h2>
+                  <div className="card_btn_created">
+                    <button type="button" class="btn btn-inverse-light btn-sm">Agregar mas información del proyecto</button>
+                    <button type="button" class="btn btn-inverse-light btn-sm">Agregar información después</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
