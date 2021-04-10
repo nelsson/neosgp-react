@@ -3,6 +3,8 @@ import { Link, withRouter } from 'react-router-dom';
 import { Collapse } from 'react-bootstrap';
 import { Dropdown } from 'react-bootstrap';
 
+import OpenNewProyect from '../../components/ButtonOpenModal'
+
 class Sidebar extends Component {
   state = {};
 
@@ -55,7 +57,9 @@ class Sidebar extends Component {
       <nav className="sidebar sidebar-offcanvas" id="sidebar">
         <div className="text-center sidebar-brand-wrapper d-flex align-items-center">
           <Link className="sidebar-brand brand-logo" to="/"><img src={require("../../assets/images/logo.svg")} alt="logo" /></Link>
-          <a className="sidebar-brand brand-logo-mini pt-3" href="index.html"><img src={require("../../assets/images/logo-mini.svg" )} alt="logo" /></a>
+          <a className="sidebar-brand brand-logo-mini pt-3" href="index.html">
+            <img src={require("../../assets/images/logo-mini.svg" )} alt="logo" />
+          </a>
         </div>
         <ul className="nav">
           <li className="nav-item nav-profile not-navigation-link">
@@ -101,7 +105,7 @@ class Sidebar extends Component {
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
-              <button className="btn btn-success btn-block">New Project <i className="mdi mdi-plus"></i></button>
+              <OpenNewProyect/>
             </div>
           </li>
           <li className={ this.isPathActive('/form-elements') ? 'nav-item active' : 'nav-item' }>
