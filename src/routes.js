@@ -6,7 +6,7 @@ import Users from "./pages/Users";
 import Recetas from "./pages/Recetas";
 import Categories from './pages/Categories';
 import Tiny from './pages/Tiny';
-import Proyectos from "./pages/Proyectos";
+import Projects from "./pages/Projects";
 import CrearProyecto from "./pages/CrearProyecto";
 
 const publicRoutes = [
@@ -91,11 +91,11 @@ const publicRoutes = [
     footer:true
   },
   {
-    name: "Proyectos",
-    component: Proyectos,
-    path: "/proyectos",
+    name: "Projects",
+    component: Projects,
+    path: "/projects",
     exact: true,
-    bodyClass: "proyectos-page",
+    bodyClass: "projects-page",
     navbar: true,
     sidebar: true,
     footer: true,
