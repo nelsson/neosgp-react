@@ -30,35 +30,35 @@ const Projects = ({ listProjects, getReceiveProjects, getTest }) => {
 								</thead>
 								<tbody>
 									<tr>
-										<td width="80%">Riturnit APP</td>
+										<td width="80%">Riturnit APP <button type="button" class="btn btn-outline-secondary">0</button></td>
 										<td width="20%">
 											<button type="button" className="btn btn-outline-primary">Ver detalle</button>
 											<button type="button" className="btn btn-outline-primary">Ver tareas</button>
 										</td>
 									</tr>
 									<tr>
-										<td width="80%">Granos del valle</td>
+										<td width="80%">Granos del valle <button type="button" class="btn btn-outline-secondary">2</button></td>
 										<td width="20%">
 											<button type="button" className="btn btn-outline-primary">Ver detalle</button>
 											<button type="button" className="btn btn-outline-primary">Ver tareas</button>
 										</td>
 									</tr>
 									<tr>
-										<td width="80%">Intranet CMQ</td>
+										<td width="80%">Intranet CMQ <button type="button" class="btn btn-outline-secondary">6</button></td>
 										<td width="20%">
 											<button type="button" className="btn btn-outline-primary">Ver detalle</button>
 											<button type="button" className="btn btn-outline-primary">Ver tareas</button>
 										</td>
 									</tr>
 									<tr>
-										<td width="80%">Global Inmobiliaria</td>
+										<td width="80%">Global Inmobiliaria <button type="button" class="btn btn-outline-secondary">8</button></td>
 										<td width="20%">
 											<button type="button" className="btn btn-outline-primary">Ver detalle</button>
 											<button type="button" className="btn btn-outline-primary">Ver tareas</button>
 										</td>
 									</tr>
 									<tr>
-										<td width="80%">Los Portales Vivienda</td>
+										<td width="80%">Los Portales Vivienda <button type="button" class="btn btn-outline-secondary">9</button></td>
 										<td width="20%">
 											<button type="button" className="btn btn-outline-primary">Ver detalle</button>
 											<button type="button" className="btn btn-outline-primary">Ver tareas</button>
