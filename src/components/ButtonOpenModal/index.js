@@ -2,10 +2,8 @@ import React, {useState} from 'react';
 import { Fragment } from 'react';
 import ModalAddProyect from '../ModalAddProyect'
 
-const OpenNewProyect = (active) => {
-
+const OpenNewProyect = () => {
    const [open, setOpen] = useState(false);
-
    const handOpen = () => {
 		setOpen(true);
 	};
@@ -13,6 +11,7 @@ const OpenNewProyect = (active) => {
    const handClose = (status) => {
 		setOpen(false);
 	};
+
    return (
       <Fragment>
          <div className="btn_new_proyect">
@@ -26,7 +25,6 @@ const OpenNewProyect = (active) => {
          <ModalAddProyect 
             open={open}
             handClose={handClose}
-            active={active}
          />
       </Fragment>
    );
