@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { getReceiveProjects } from '../../store/projects/operations';
 
-import Projects from './Projects';
+import ListProjects from './ListProjects';
 
 const test = () => {
     console.log('console en container');
@@ -20,4 +20,4 @@ const mapDispatchToProps = (dispatch) => ({
     getTest: () => test(),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Projects);
+export default connect(mapStateToProps, mapDispatchToProps)(ListProjects);
