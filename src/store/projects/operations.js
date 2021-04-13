@@ -8,7 +8,7 @@ import {
 export const getReceiveProjects = (data) => {
     return (dispatch) => {
         dispatch(requestProjects());
-        return fetch('https://jsonplaceholder.typicode.com/posts/1/comments', {
+        return fetch('http://157.230.190.228/api-neosgp/wp-json/api/list-projects', {
             // headers:{
             //     Authorization:`Bearer ${data.token}`
             // }
