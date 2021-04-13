@@ -7,6 +7,8 @@ import { userReducer} from './users/reducers'
 import { recetasReducer} from './recetas/reducers'
 import { categoriesReducer} from './categories/reducers'
 import { projectsReducer} from './projects/reducers'
+import { loginReducer } from './login/reducers'
+import { registerReducer } from './register/reducers'
 
 const rootReducer = combineReducers({
   banner: bannerReducer,
@@ -14,6 +16,8 @@ const rootReducer = combineReducers({
   recetasStore: recetasReducer,
   categoriesStore:categoriesReducer,
   projectState:projectsReducer,
+  loginState: loginReducer,
+  registerState: registerReducer,
 });
 
 const Store = createStore(
