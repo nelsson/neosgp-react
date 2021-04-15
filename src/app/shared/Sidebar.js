@@ -43,6 +43,8 @@ class Sidebar extends Component {
       {path:'/charts', state: 'chartsMenuOpen'},
       {path:'/user-pages', state: 'userPagesMenuOpen'},
       {path:'/recetas', state: 'ViewRecetas'},
+      {path:'/projects', state: 'ViewProjects'},
+      {path:'/crear-proyecto', state: 'ViewProjects'},
       {path:'/users', state: 'ViewUsers'},
     ];
 
@@ -137,15 +139,15 @@ class Sidebar extends Component {
           </li>
 
           <li className={ this.isPathActive('/projects') ? 'nav-item active' : 'nav-item' }>
-            <div className={ this.state.ViewProyectos ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('ViewProyectos') } data-toggle="collapse">
+            <div className={ this.state.ViewProjects ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('ViewProjects') } data-toggle="collapse">
               <i className="fa fa-folder-open menu-icon"></i>
               <span className="menu-title">Proyectos</span>
               <i className="menu-arrow"></i>
             </div>
-            <Collapse in={ this.state.ViewProyectos }>
+            <Collapse in={ this.state.ViewProjects }>
               <ul className="nav flex-column sub-menu">
-                <li className="nav-item"> <Link className={ this.isPathActive('/basic-ui/buttons') ? 'nav-link active' : 'nav-link' } to="/projects">Listado de Proyectos</Link></li>
-                <li className="nav-item"> <Link className={ this.isPathActive('/basic-ui/dropdowns') ? 'nav-link active' : 'nav-link' } to="/crear-proyecto">Crear Proyecto</Link></li>
+                <li className="nav-item"> <Link className={ this.isPathActive('/projects') ? 'nav-link active' : 'nav-link' } to="/projects">Listado de Proyectos</Link></li>
+                <li className="nav-item"> <Link className={ this.isPathActive('/crear-proyecto') ? 'nav-link active' : 'nav-link' } to="/crear-proyecto">Crear Proyecto</Link></li>
               </ul>
             </Collapse>
           </li>
